@@ -1,0 +1,20 @@
+@(valor1 : Int, valor2 : Int, totalSoma : Int, produto : Int, maior : Int, menor : Int)
+
+@main("Questão 1") {
+  <h1>Informe os valores</h1>
+  <form method="post" action="@controllers.routes.HomeController.formOperacoes()">
+    <p>Valor A: <input type="text" name="a"></p>
+    <p>Valor B: <input type="text" name="b"></p>
+    <button type="submit">Enviar</button>
+  </form>
+
+
+
+  <h1>Resultados</h1>
+  <h3>O maior número:</h3><p>@maior</p>
+  <h3>O menor número:</h3><p>@menor</p>
+  <h3>Resultado da Soma:</h3><p>@totalSoma</p>
+  <h3>Resultado da Multiplicação:</h3><p>@produto</p>
+
+
+}
